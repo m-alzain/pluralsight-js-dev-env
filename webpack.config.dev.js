@@ -29,7 +29,9 @@ export default {
       {
         test: /\.(js|jsx)$/,
         use: 'babel-loader'
-      }
+      },
+      // npm install --save-dev css-loader
+      { test: /\.css$/, use: 'css-loader' },
     ]
   }
 };
