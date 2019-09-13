@@ -15,7 +15,7 @@ describe('index.html', () => {
     const { JSDOM } = jsdom;
     const { window } = new JSDOM(index);
     const h1 = window.document.getElementsByTagName('h1')[0];
-    expect(h1.innerHTML).to.equal('Hello World!');
+    expect(h1.innerHTML).to.equal('Users');
     window.close();
     // jsdom.env(index, function(err, window){
     //   const h1 = window.document.getElementsByTagName('h1')[0];
